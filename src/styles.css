@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+body{
+    background: url(alex-haney-CAhjZmVk5H4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#content{
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+}
+.authorname{
+    display:block;
+    font-weight:600;
+    color: firebrick;
+}
+.hoursdiv>span{
+    display: block;
+    margin-bottom: 15px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+}
+header>div{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.hoursdiv,.locationdiv,.explainerdiv,.menudiv,.contactdiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explainerp{
+    width: clamp(45ch,50%,75ch);
+}
+.explainerdiv,.locationdiv{
+    background-color:rgba(0, 0, 0, 0.6);
+
+}
+.hoursdiv{
+    background-color:rgba(0, 0, 0, 0.4);
+}
+.explainerdiv>h1{
+    font-size: 4rem;
+}
+.food1,.food2,.food3{
+    width:500px;
+    height: 500px;
+}
+.fooddiv1,.fooddiv2,.fooddiv3{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.fooddiv1::after{
+    content: 'Delicious foods';
+    display: block;
+}
+.fooddiv2::after{
+    content: 'Great dining experience';
+    display: block;   
+}
+.fooddiv3::after{
+    content: 'Delicious recipes';
+    display: block;   
+}
+.menudiv{
+    gap: 20px;
+}
+.menubtn:hover,.homebtn:hover,.contactbtn:hover{
+    border-bottom: 2px solid firebrick;
+}
+
+
+
